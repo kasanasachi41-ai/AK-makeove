@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --bg-page: #FAF7F5;
+    --text-primary: #1E1919;
+    --text-muted: #5F464A;
+    --card-bg: #FFFFFF;
+    --border-subtle: #ECCECE;
+  }
+
+  .dark {
+    --bg-page: #0C080A;
+    --text-primary: #FDF1F3;
+    --text-muted: #BBA5A8;
+    --card-bg: #161113;
+    --border-subtle: #382428;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, .font-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Rose-Gold Metallic Shimmer & Gradients */
+.bg-rose-gold-gradient {
+  background: linear-gradient(135deg, #C5838B 0%, #D4A373 50%, #B76E79 100%);
+}
+
+.text-rose-gold-gradient {
+  background: linear-gradient(135deg, #B76E79 0%, #E2A676 50%, #C5838B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-rose-gold-subtle {
+  border-color: rgba(197, 131, 139, 0.25);
+}
+
+.rose-gold-shadow {
+  box-shadow: 0 10px 30px -10px rgba(183, 110, 121, 0.2);
+}
+
+.rose-gold-card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(183, 110, 121, 0.1), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+/* Dark mode specific subtle enhancements */
+.dark .dark-card {
+  background-color: #161113;
+  border-color: #382428;
+}
+
+.dark .dark-surface {
+  background-color: #120D0F;
+}
+
+.dark .dark-input {
+  background-color: #1C1518;
+  border-color: #40292E;
+  color: #FDF1F3;
+}

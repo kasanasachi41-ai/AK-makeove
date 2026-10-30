@@ -1,0 +1,6 @@
+{
+  "name": "AK Makeover — Luxury Bridal Makeup Studio & Skin Care",
+  "description": "Premium beauty parlour and bridal makeup studio offering HD Indian bridal makeup, party glam, advanced facials, pre-bridal packages, and professional hairstyling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
